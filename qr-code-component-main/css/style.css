@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+:root {
+  /* FONT */
+  --ff-title: "Outfit", sans-serif;
+  --ff-default: "Outfit", Helvetica, Arial, sans-serif;
+  --fw-default: 400;
+  --fw-bold: 700;
+  --fs-default: 15px;
+
+  /* COLOR */
+  --clr-light-grey: hsl(212, 45%, 89%);
+  --clr-grayish-blue: hsl(220, 15%, 55%);
+  --clr-grayish-blue-a: hsl(220, 15%, 55%, .3);
+  --clr-white: hsl(0, 0%, 100%);
+}
+
+body {
+  font: var(--fw-default) var(--fs-default) var(--ff-default);
+  color: var(--clr-dark-grey);
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--clr-light-grey);
+}
+
+.card {
+  width: 320px;
+  height: 497px;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: var(--clr-white);
+  /* background-color: red; */
+
+  display: flex;
+  flex-direction: column;
+  
+  box-shadow: 5px 5px 15px 5px var(--clr-grayish-blue-a);
+}
+
+.qr-container {
+  /* background-color: red; */
+}
+
+.qr-code {
+  border-radius: 20px;
+}
+
+.card-info {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  gap: 16px
+}
+
+.info-header {
+  font-size: 22px;
+  font-weight: var(--fw-bold);
+}
