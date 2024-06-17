@@ -1,0 +1,117 @@
+@font-face {
+  font-family: Figtree;
+  src: url(../assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: FigtreeItalic;
+  src: url(../assets/fonts/Figtree-Italic-VariableFont_wght.ttf);
+}
+
+:root {
+  /* FONT */
+  --ff-title: "Figtree", sans-serif;
+  --ff-default: "Figtree", Helvetica, Arial, sans-serif;
+  --fw-default: 500;
+  --fw-bold: 800;
+  --fs-title: 20px;
+  --fs-default: 16px;
+
+  /* SIZE */
+  --card-size: 327px;
+  --card-radius: 20px;
+  --card-padding: 24px;
+
+  --card-header-radius: 10px;
+
+  --card-pfp-size: 32px;
+
+  /* COLOR */
+  --clr-yellow: hsl(47, 88%, 63%);
+  --clr-grayish: hsl(0, 0%, 50%);
+  --clr-black: Black: hsl(0, 0%, 7%);
+  --clr-white: hsl(0, 0%, 100%);
+}
+
+body {
+  font: var(--fw-default) var(--fs-default) var(--ff-default);
+  color: var(--clr-black);
+  
+  background-color: var(--clr-yellow);
+
+  display: flex;
+  justify-content: center;
+}
+
+.test {
+  border: 2px solid rgb(255, 0, 0, .3);
+  background-color: rgb(255, 0, 0, .15);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: var(--card-size);
+  padding: var(--card-padding);
+  border-radius: var(--card-radius);
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--card-padding);
+
+  background-color: var(--clr-white);
+}
+
+.img-container {
+  overflow: hidden;
+}
+
+.card-img {
+  object-fit: cover;
+}
+
+.card-header {
+  border-radius: var(--card-header-radius);
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--card-padding) / 2);
+}
+
+.card-author {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--card-padding) / 2);
+}
+
+.author-pfp {
+  width: var(--card-pfp-size);
+  height: var(--card-pfp-size);
+  border-radius: 50%;
+}
+
+.author-pfp-img {
+  object-position: 0 -2px;
+}
+
+
+/* .card {
+  width: 320px;
+  height: 497px;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: var(--clr-white);
+
+  display: flex;
+  flex-direction: column;
+  
+  box-shadow: 5px 5px 15px 5px var(--clr-grayish-blue-a);
+} */
+
